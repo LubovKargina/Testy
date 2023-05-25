@@ -1,0 +1,81 @@
+import turtle
+
+character = turtle.Turtle()
+character.speed(10)
+
+
+def body():
+  character.penup()
+  character.goto(0, -90)
+  character.pendown()
+  
+  character.pensize(20)
+  character.color('red')
+  
+  character.begin_fill()
+  
+  character.rt(90)
+  character.fd(50)
+  character.circle(40, 180)
+  character.fd(200)
+  character.circle(100, 180)
+  character.fd(200)
+  character.circle(40, 180)
+  character.fd(45)
+
+  character.end_fill()
+  
+def glass():
+  character.penup()
+  character.fd(110)
+  character.lt(90)
+  character.fd(20)
+  character.rt(90)
+  character.pendown()
+  
+  character.color('lightblue')
+  character.begin_fill()
+  
+  character.rt(90)
+  character.circle(30, 180)
+  character.fd(80)
+  character.circle(30, 180)
+  character.fd(80)
+
+  character.end_fill()
+
+  character.penup()
+  character.bk(80)
+  character.lt(90)
+  character.fd(33)
+  character.color('white')
+  character.pendown()
+  character.lt(90)
+  character.circle(5, 90)
+
+def backpack():
+  character.penup()
+  character.color('red')
+  
+  character.lt(90)
+  character.fd(240)
+
+  character.pendown()
+  character.begin_fill()
+
+  
+  character.lt(90)
+  character.fd(5)
+  character.rt(90)
+  character.fd(30)
+  character.rt(90)
+  character.fd(90)
+  character.rt(90)
+  character.fd(30)
+
+  character.end_fill()
+  
+    
+body()
+glass()
+backpack()
